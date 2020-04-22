@@ -54,7 +54,7 @@ def timed_job():
     timering = session.query(Users).order_by(Users.last_ans.asc()).first()
     if timering is not None:
         if ((datetime.datetime.now()-datetime.datetime.strptime(timering.last_ans,'%Y-%m-%d %H:%M:%S.%f')) > datetime.timedelta(minutes=stgs.time)):
-            params = {"chat_id": timering.User_id, "text": '{Хей пора повторить английский }!',
+            params = {"chat_id": timering.User_id, "text": 'Хей пора повторить английский!',
                       'reply_markup': '{"keyboard": [["Начать игру"],["Отложить"]],"resize_keyboard":true}'}
             timering.last_word=''
             timering.last_position=-1
