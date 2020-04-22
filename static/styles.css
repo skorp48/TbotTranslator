@@ -1,0 +1,59 @@
+body{
+	background-image: url("fon.jpg");
+}
+
+
+.front{
+	text-align: center;
+	background-color: rgba(255, 38, 0, 0.664);
+	border-radius: 10px;
+	margin: 5% 30%;
+	padding: 50px; 
+	color: white;     
+}
+
+a{
+	display: block;
+	border: solid  rgb(31, 6, 59) 2px;
+	background-color: rgb(44, 9, 85);
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	padding: 5px 30px;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+a:hover{
+	border: solid  rgb(31, 6, 59) 2px;
+	background-color: rgb(56, 9, 109);
+}
+
+label{
+	border-bottom: rgb(44, 9, 85) solid 2px;
+	display: block;
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 24px;
+}
+
+label input{
+	font-size: 20px;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+button{	
+	border: solid  rgb(31, 6, 59) 2px;
+	background-color: rgb(44, 9, 85);
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	padding: 5px 30px;
+	font-size: 20px;
+}
+button:hover{
+	border: solid  rgb(31, 6, 59) 2px;
+	background-color: rgb(56, 9, 109);
+}
