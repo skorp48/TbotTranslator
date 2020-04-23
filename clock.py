@@ -46,7 +46,7 @@ sched = BlockingScheduler()
 def timed_job1():
     print("Антисон")
     params = {"text": 'Wake up'}
-    requests.get(URL + "/sendMessage", params=params)
+    requests.get("https://justtranslatorbot.herokuapp.com/", params=params)
 
 @sched.scheduled_job('interval', minutes=1)
 def timed_job():
