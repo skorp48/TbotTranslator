@@ -44,7 +44,8 @@ sched = BlockingScheduler()
 
 @sched.scheduled_job('interval', seconds=30)
 def timed_job1():
-    params = {"text": 'Не спать!'}
+    print("Антисон")
+    params = {"text": 'Wake up'}
     requests.get(URL + "/sendMessage", params=params)
 
 @sched.scheduled_job('interval', minutes=1)
